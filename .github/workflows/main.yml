@@ -28,8 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          mkfs -q /dev/ram1 8192
-          mkdir -p /ramcache
+          sudo mkfs -q /dev/ram1 8192
+          sudo mkdir -p /ramcache
           sudo mount /dev/ram1 /ramcache
         
         
